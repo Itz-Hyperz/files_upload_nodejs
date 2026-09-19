@@ -4,6 +4,12 @@ This project is a simple Node.js application for uploading profile and cover ima
 
 It stores the uploaded files in the `uploads/` folder and saves the file paths in a MongoDB collection.
 
+## Screenshot
+
+![Upload form screenshot](image.png)
+
+![Uploaded MongoDB entries](image-1.png)
+
 ## Features
 
 - Upload two images at once: `profileImage` and `coverImage`
@@ -108,3 +114,4 @@ If the app does not work:
 ## License
 
 This project is for learning and demonstration purposes.
+
