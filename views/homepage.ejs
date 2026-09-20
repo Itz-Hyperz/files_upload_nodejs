@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Uploads</title>
+    <style>
+        body {
+            background-color: #1a212b;
+            color: #c97b48;
+        }
+        input::file-selector-button {
+            background-color: #303336;
+            color: #c97b48; 
+            border-color: #c97b48;
+        }
+        button {
+            margin-top: 1em;
+            background-color: #c97b48;
+            color: #1a212b;
+            border: none;
+            padding: 10px 20px;
+        }
+        div {
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
 <body>
     <h2>File Uploads</h2>
     <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="profileImage" />
-        <input type="file" name="coverImage" />
+        <div>
+            <label for="profileImage">Profile Image:</label>
+            <input type="file" name="profileImage" />
+        </div>
+        <div>
+            <label for="coverImage">Cover Image:</label>
+            <input type="file" name="coverImage" />
+        </div>
         <button type="submit">Upload</button>
     </form>
 </body>
